@@ -37,6 +37,14 @@ body{
 .card{
     margin-top: 1.5rem;
 }
+.container .card:hover{
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+} 
 .lastmenu{
     margin-top: 1.5rem;
 }
