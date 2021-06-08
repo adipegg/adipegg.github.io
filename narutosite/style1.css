@@ -1,0 +1,495 @@
+@font-face {
+  font-family: NinjaNaruto; /* Гарнитура шрифта */
+  src: url(14898.ttf); /* Путь к файлу со шрифтом */
+  
+ }
+ .left-bar{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 70px;
+    background-color: #232323;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body{
+    min-height: 100vh;
+    background-color:#111;
+  position: relative;
+  top: -32px;
+  left: -20px;
+}
+.text-name {
+text-align: center;
+color: #FCF7FF;
+margin-top: 20px;
+font-size: x-large;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main {
+    height: 100vh;
+    width: 100%;
+  }
+  .box {
+    flex-direction: column;
+    margin-top: 300px;
+  }
+  
+  
+  
+  
+  
+  .box a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: rgb(51, 51, 51);
+    margin: 0.3em;
+    background: rgb(236, 236, 236);
+    position: relative;
+    transition: all 0.4s;
+    font-size: 0.8rem;
+  }
+  .box a:hover {
+    transform: scale(0.9);
+  }
+  
+  
+  
+  
+  .box a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 70px;
+    font-family: cursive;
+    border-radius: 50px;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    background: rgb(236, 236, 236);
+    display: none;
+  }
+  .box a:hover::before {
+    display: flex;
+  }
+  
+  
+  
+  
+  .box a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background: #f7b733;
+    transform: scale(0);
+    transition: all 0.4s;
+  }
+  .box a:hover::after {
+    transform: scale(0.8);
+  }
+  .box a i {
+    z-index: 20;
+    transition: all 0.4s;
+  }
+  .box a:hover i {
+    color: white;
+  }
+.mainphoto{
+  width: 100%;
+  height: 100%;
+}
+.image {
+	width		: 100%; /* for IE 6 */
+  height: 100vh;
+}
+ h1 {
+   font-family: NinjaNaruto;
+   font-size: 5rem; /* Размер текста */
+  margin: 0; /* Убираем отступы */
+  background: linear-gradient(#f7b733, #fc4a1a);/* Белый цвет фона */
+    -webkit-background-clip: text; /* Обрезаем фон по тексту */
+    -webkit-text-fill-color: transparent; /* Прозрачный текст */
+	position	: absolute;
+	top		: 350px;
+	left		: 0;
+	width		: 100%;
+  text-shadow: 0 0 1em orange;
+}
+.secondtext {
+  font-family: NinjaNaruto;
+  margin: 0; /* Убираем отступы */
+  background: linear-gradient(25deg,#FDA802,#FDA802, #F00800,#F00800);/* Белый цвет фона */
+  -webkit-background-clip: text; /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent; /* Прозрачный текст */
+	position	: absolute;
+	top		: 525px;
+	left		: 0;
+	width		: 100%;
+  text-shadow: 0 0 1em #FDA802;
+}
+.menu-text{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin: 0; /* Убираем отступы */
+  background: linear-gradient(to right,#434343, #000000);/* Белый цвет фона */
+  -webkit-background-clip: text; /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent; /* Прозрачный текст */
+	position	: absolute;
+	top		: 35px;
+	left		: 0;
+	width		: 100%;
+  text-shadow: 0 0 1em #434343;
+}
+.ico2{
+  width:100%;
+  height: 100%;
+}
+
+.commands {
+  margin-top: 60px;
+color: white;
+font-family: NinjaNaruto;
+   font-size: 3rem; /* Размер текста */
+  background: linear-gradient(#3CA55C, #B5AC49);/* Белый цвет фона */
+  -webkit-background-clip: text; /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent; /* Прозрачный текст */
+  text-shadow: 0 0 1em #3CA55C;
+}
+.command7 {
+  margin-top: 20px;
+color: white;
+font-family: NinjaNaruto;
+   font-size: 2.5rem; /* Размер текста */
+  background: linear-gradient(#F7971E, #FFD200);/* Белый цвет фона */
+  -webkit-background-clip: text; /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent; /* Прозрачный текст */
+  text-shadow: 0 0 1em #F7971E;
+}
+.p {
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.command8 {
+  margin-top: 30px;
+color: white;
+font-family: NinjaNaruto;
+   font-size: 2.5rem; /* Размер текста */
+  background: linear-gradient(#4e54c8, #8f94fb);/* Белый цвет фона */
+  -webkit-background-clip: text; /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent; /* Прозрачный текст */
+  text-shadow: 0 0 1em #4e54c8;
+}
+.command10 {
+  margin-top: 30px;
+color: white;
+font-family: NinjaNaruto;
+   font-size: 2.5rem; /* Размер текста */
+  background: linear-gradient(#1F1C2C, #928DAB);/* Белый цвет фона */
+  -webkit-background-clip: text; /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent; /* Прозрачный текст */
+  text-shadow: 0 0 1em #1F1C2C;
+}
+.commandguy{
+  margin-top: 30px;
+color: white;
+font-family: NinjaNaruto;
+   font-size: 2.5rem; /* Размер текста */
+  background: linear-gradient(#11998e, #FAFFD1);/* Белый цвет фона */
+  -webkit-background-clip: text; /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent; /* Прозрачный текст */
+  text-shadow: 0 0 1em #11998e;
+}
+.commandY{
+  margin-top: 30px;
+  color: white;
+  font-family: NinjaNaruto;
+     font-size: 2.5rem; /* Размер текста */
+    background: linear-gradient(#1F1C18,#EF3B36, #FAFFD1);/* Белый цвет фона */
+    -webkit-background-clip: text; /* Обрезаем фон по тексту */
+    -webkit-text-fill-color: transparent; /* Прозрачный текст */
+    text-shadow: 0 0 1em #EF3B36;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+
+}
+.main {
+  height: 100vh;
+}
+
+
+
+
+
+
+.boxx a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: rgb(51, 51, 51);
+  background: rgb(236, 236, 236);
+  position: relative;
+  transition: all 0.4s;
+  margin-left: 20px;
+}
+.boxx a:hover {
+  transform: scale(0.9);
+}
+
+
+
+
+.boxx a::before {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  font-family: cursive;
+  border-radius: 50px;
+  width: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+  background: rgb(236, 236, 236);
+  display: none;
+}
+.boxx a:hover::before {
+  display: flex;
+}
+
+
+
+
+.boxx .telegram::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #1c92d2, #f2fcfe);
+  transform: scale(0);
+  transition: all 0.4s;
+}
+.boxx .github::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #7303c0, #fdeff9);
+  transform: scale(0);
+  transition: all 0.4s;
+}
+.boxx .inst::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #833ab4, #fd1d1d,#fcb045);
+  transform: scale(0);
+  transition: all 0.4s;
+}
+.boxx .youtube::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background: #FF0000;
+  transform: scale(0);
+  transition: all 0.4s;
+}
+.boxx .soundcloud::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #fe8c00,#f83600);
+  transform: scale(0);
+  transition: all 0.4s;
+}
+.boxx a:hover::after {
+  transform: scale(0.8);
+}
+.boxx a i {
+  z-index: 20;
+  transition: all 0.4s;
+}
+.boxx a:hover i {
+  color: white;
+}
+
+.sub-menu{
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  padding: 0;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+ul > li{
+    box-sizing: border-box;
+    list-style-type: none;
+}
+.sub-menu a {
+  color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.my-preloader{
+  background-color: #FF8066;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.btn-top{
+  position: absolute;
+  right: 10px;
+  top:1px;
+}
+.regButton {
+  background: #FBD786;
+  border: 0.1px solid #ccc;
+  border-radius: 5px;
+  padding: 6px 24px;
+  cursor: pointer;
+  margin: 15px auto;
+  font-weight: 600;
+}
+.regButton:hover {
+  background:#ffd89b;
+}
+
+#window {
+  position: absolute;
+  width: 350px;
+  height: 530px;
+  margin: 40px auto;
+  background: url(regbcg.png);
+  background-size: cover;
+  border: 1px solid ;
+  border-radius: 15px;
+  z-index: 150;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.5s 0.2s;
+  filter: blur(0.5px);
+  /* display: none; */
+}
+
+.close {
+  display: inline-block;
+  margin: 10px 0 0 320px;
+  cursor: pointer;
+  padding: 0;
+  font-size: 20px;
+}
+
+.form {
+  width: 275px;
+  margin: -15px auto 20px auto;
+  text-align: center;
+}
+.input {
+  width: 260px;
+  padding: 5px;
+  margin: 8px 0;
+  margin-bottom: 15px;
+  border:none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #FFFFFF;
+}
+.input::placeholder{
+  color: white;
+}
+.registr{
+  height: 40px;
+  width: 260px;
+  padding: 5px;
+  margin-bottom: 50px;
+  border-radius: 99px;
+  background-color: #FFE8C7;
+  border: none;
+  font-size: larger;
+}
+.registr:hover{
+  background-color: #FFFFFF;
+}
+#shadow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  background: #000;
+  opacity: 0.5;
+  left: 0;
+  top: 0;
+}
